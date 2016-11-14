@@ -1,0 +1,23 @@
+{
+  "name": "g-forms-simplify",
+  "version": "0.1.0",
+  "description": "Simplify google forms markup to embed it in a web page with your own style",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha /test/test.js"
+  },
+  "keywords": [
+    "google",
+    "forms",
+    "forms"
+  ],
+  "author": "Fabian Gutierrez <fega.hg@gmail.com> (http://www.fabiangutierrez.co/)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "cheerio": "0.22.0",
+    "commander": "2.9.0",
+    "nightmare": "2.8.1",
+    "request": "2.78.0"
+  }
+}
