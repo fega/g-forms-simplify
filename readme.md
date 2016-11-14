@@ -10,7 +10,7 @@ Simplify google forms markup to easily be embed it in a webpage with your own st
 
 ## input:
 ```bash
-$ g-forms-simplify -f"1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
+$ g-forms-simplify -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
 ```
 ### output:
 ```html
