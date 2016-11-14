@@ -1,6 +1,6 @@
 {
   "name": "g-forms-simplify",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simplify google forms markup to embed it in a web page with your own style",
   "main": "index.js",
   "scripts": {
