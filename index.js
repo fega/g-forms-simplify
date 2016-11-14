@@ -72,8 +72,9 @@ function generateForm(error,action,serialized){
 	var myString='';
 	myString+=`<form action="${action}" method="" target="hidden_iframe" onsubmit="submitted=true">`;
 	serialized.forEach(item=>{
-		myString+=`\n<input type="${item.type}" value="${item.value}" name="${item.name}" autocomplete="${item.autocomplete}" required="${item.required}" placeholder="${item.placeholder}"/>`;
+		myString+=`  \n<input type="${item.type}" value="${item.value}" name="${item.name}" autocomplete="${item.autocomplete}" required="${item.required}" placeholder="${item.placeholder}"/>`;
 	});
+	myString+=`  \n<input type="submit" name="submit" value="Send">`;
 	myString+=`\n</form>`;
 	console.log(myString);
 }
