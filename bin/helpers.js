@@ -31,3 +31,6 @@ module.exports.required= function (required){
 module.exports.placeholder= function (placeholder){
 	return placeholder?`placeholder="${placeholder}"`:'';
 };
+module.exports.label= function (label,index){
+	return label?`<label for="g-form-input-${index}">${label}</label>`:'';
+};

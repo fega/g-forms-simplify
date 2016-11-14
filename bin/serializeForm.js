@@ -29,8 +29,8 @@ module.exports=function (callback,form,options){
 				};
 			});
 		}
-		//console.log("serialized form:".yellow);
-		//console.log(formArray);
+		console.log("serialized form:".yellow);
+		console.log(formArray);
 		callback(error,action,formArray,options);
 	});
 };
