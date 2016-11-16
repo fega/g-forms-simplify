@@ -3,9 +3,8 @@ module.exports.destiny= function (destiny){
 };
 
 module.exports.destinyScript= function (destiny){
-	return destiny?`
-	<script type="text/javascript">var submitted=false;</script>
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){window.location='${destiny}';}"></iframe`:'';
+	return destiny?`<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){window.location='${destiny}';}"></iframe`:'';
 };
 
 module.exports.value= function (value){
