@@ -4,7 +4,8 @@
   "description": "Simplify google forms markup to embed it in a web page with your own style",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/test.js"
+    "test": "mocha ./test/test.js",
+  "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "keywords": [
     "google",
