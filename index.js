@@ -15,7 +15,7 @@ program
     .option('-d --destiny <a>..<b>', 'where you want to redirect after an user sends a form')
     .parse(process.argv);
 
-console.log("checking -f parameter".green)
+console.log("checking -f parameter".green);
 var form = urlCheck(program.form);
 
 var options = {form};
