@@ -1,6 +1,6 @@
 # Google forms Simplify
 
-Simplify google forms markup to easily be embed it in a webpage with your own style
+Simplify google forms markup to easily be embed it in a webpage with your own style, right now it only supports text and e-mail inputs
 
 ## install
 
@@ -21,6 +21,14 @@ $ g-forms-simplify -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
 </form>
 
 ```
+## CLI options
+
+### '-f, --form (URL || ID)'
+the url to be simplified.
+
+### '-d --destiny (URL)'
+The page that is displayed after submit the form
+
 ## License
 
 MIT © [Fabian Gutierrez](http://fabiangutierrez.co)
