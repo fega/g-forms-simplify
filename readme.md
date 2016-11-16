@@ -1,4 +1,9 @@
 # Google forms Simplify
+[![Coverage Status](https://coveralls.io/repos/github/fega/g-forms-simplify/badge.svg?branch=master)](https://coveralls.io/github/fega/g-forms-simplify?branch=master)
+
+[![Build Status](https://travis-ci.org/fega/g-forms-simplify.svg?branch=master)](https://travis-ci.org/fega/g-forms-simplify)
+
+[![npm version](https://badge.fury.io/js/g-forms-simplify.svg)](https://badge.fury.io/js/g-forms-simplify)
 
 Simplify google forms markup to easily be embed it in a webpage with your own style, right now it only supports text and e-mail inputs
 
