@@ -4,7 +4,7 @@ Simplify google forms markup to easily be embed it in a webpage with your own st
 
 ## install
 
-`$ npm install --g g-forms-simplify`
+`$ npm install -g g-forms-simplify`
 
 ## Usage
 
