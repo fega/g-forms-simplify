@@ -178,4 +178,22 @@ describe('formCheck',done=>{
 			done();
 		})
 	});
+	describe('(malformedID/)',done=>{
+		it('shold throw an error',done=>{
+			expect(urlCheck.bind("malformedID/")).to.throw();
+			done();
+		})
+	});
+});
+describe('serializeForm',function(done){
+	describe('(undefined)',function(done){
+		it('Should throw an error')
+	});
+	describe('("hey")',function(done){
+		it('Should throw an error')
+	});
+	describe('(<formUrl>)',function(done){
+		it('Should generate a form')
+		it('Should generate delete unwanted spaces')
+	});
 });
