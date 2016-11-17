@@ -1,22 +1,22 @@
 var h=require('./helpers');
+var gi=require('./generateInputs');
 module.exports=function (error,action,serialized,options){
 	var destiny=options.destiny;
 	var myString='';
 
 	myString+=`<form action="${action}" method="POST" ${h.destiny(destiny)}>`;
 	serialized.forEach((item,index)=>{
-		var name  =item.name;
-		var typ  =item.type;
-		var value =item.value;
-		var ph    =item.placeholder;
-		var auto  =item.autocomplete;
-		var req   =item.required;
-		var label   =item.label;
-		myString+=`
-<p>
-  ${h.label(label,index)}
-  <input id="g-form-input-${index}" ${h.type(typ)} ${h.value(value)} ${h.name(name)} ${h.autocomplete(auto)} ${h.required(req)} ${h.placeholder(ph)}/>
-</p>`;
+		switch (item.tag) {
+			case 'input':
+				console.log("generating text input".yellow);
+				myString+=gi.textInput(item,index);
+				break;
+			case 'textarea':
+			console.log("generating textarea".yellow);
+				myString+=gi.textareaInput(item,index);
+				break;
+			default:
+		}
 	});
 	myString+= h.destinyScript(destiny);
 	myString+=`\n<input type="submit" name="submit" value="Send">`;

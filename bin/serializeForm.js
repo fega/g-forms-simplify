@@ -11,13 +11,18 @@ module.exports=function (callback,form,options){
 
 			var formArray = array.map(item=>{
 
-				var el=`input[name="${item.name}"]`;
+				var el=`[name="${item.name}"]`;
+
+				var tag = $(el).prop('tagName').toLowerCase();
 
 				var type=$(el).attr('type');
 				var autocomplete=$(el).attr('autocomplete');
 				var label=$(el).attr('aria-label');
 				var required=$(el).attr('required');
 				var placeholder=$(el).attr('data-initial-value');
+				var maxlength=$(el).attr('maxlength');
+				var max=$(el).attr('max');
+				var min=$(el).attr('min');
 
 				return {
 					name:item.name,
@@ -26,12 +31,16 @@ module.exports=function (callback,form,options){
 					autocomplete,
 					label,
 					required,
-					placeholder
+					placeholder,
+					max,
+					min,
+					maxlength,
+					tag
 				};
 			});
 		}
-		//console.log("serialized form:".yellow);
-		//console.log(formArray);
+		// console.log("serialized form:".yellow);
+		// console.log(formArray);
 		callback(error,action,formArray,options);
 	});
 };
