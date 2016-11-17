@@ -142,6 +142,50 @@ describe('helpers',done=>{
 			done()
 		});
 	});
+
+	describe('max',function(done){
+		it('(undefined) should be ""',function(done){
+			var helper = h.max(undefined);
+			expect(helper).to.equal('')
+			done();
+		})
+		it('("something") should be ""',function(done){
+			var helper = h.max("something");
+			expect(helper).to.equal(`max="something"`)
+			done();
+		})
+	});
+
+	describe('min',function(done){
+		it('(undefined) should be ""',function(done){
+			var helper = h.min(undefined);
+			expect(helper).to.equal('')
+			done();
+		})
+		it('("something") should be ""',function(done){
+			var helper = h.min("something");
+			expect(helper).to.equal(`min="something"`)
+			done();
+		})
+	});
+
+	describe('maxlength',function(done){
+		it('(undefined) should be ""',function(done){
+			var helper = h.maxlength(undefined);
+			expect(helper).to.equal('')
+			done();
+		})
+		it('("something") should be ""',function(done){
+			var helper = h.maxlength("something");
+			expect(helper).to.equal(``)
+			done();
+		})
+		it('(<number>) should be maxlength="<number>"',function(done){
+			var helper = h.maxlength(2);
+			expect(helper).to.equal(`maxlength="2"`)
+			done();
+		})
+	});
 });
 
 describe('formCheck',done=>{

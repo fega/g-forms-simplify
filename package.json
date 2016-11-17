@@ -4,7 +4,7 @@
   "description": "Simplify google forms markup to embed it in a web page with your own style",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/test.js",
+    "test": "mocha ./test/*",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/*",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
@@ -27,6 +27,7 @@
     "cheerio": "0.22.0",
     "colors": "1.1.2",
     "commander": "2.9.0",
+    "is-number": "3.0.0",
     "request": "2.78.0"
   },
   "repository": "https://github.com/fega/g-forms-simplify.git",

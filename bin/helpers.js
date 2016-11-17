@@ -1,3 +1,4 @@
+var isNumber = require('is-number');
 module.exports.destiny= function (destiny){
 	return destiny?'target="hidden_iframe" onsubmit="submitted=true"':'';
 };
@@ -29,6 +30,15 @@ module.exports.required= function (required){
 
 module.exports.placeholder= function (placeholder){
 	return placeholder?`placeholder="${placeholder}"`:'';
+};
+module.exports.max= function (max){
+	return max?`max="${max}"`:'';
+};
+module.exports.min= function (min){
+	return min?`min="${min}"`:'';
+};
+module.exports.maxlength= function (maxlength){
+	return isNumber(maxlength)?`maxlength="${maxlength}"`:'';
 };
 module.exports.label= function (label,index){
 	return label?`<label for="g-form-input-${index}">${label}</label>`:'';
