@@ -8,6 +8,7 @@ module.exports=function (callback,form,options){
 			$ = cheerio.load(body);
 			var action=$('form').attr('action');
 			var array= $('form').serializeArray();
+
 			var formArray = array.map(item=>{
 
 				var el=`input[name="${item.name}"]`;
@@ -29,8 +30,8 @@ module.exports=function (callback,form,options){
 				};
 			});
 		}
-		console.log("serialized form:".yellow);
-		console.log(formArray);
+		//console.log("serialized form:".yellow);
+		//console.log(formArray);
 		callback(error,action,formArray,options);
 	});
 };
