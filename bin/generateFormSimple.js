@@ -1,5 +1,13 @@
 var h=require('./helpers');
 var gi=require('./generateInputs');
+/**
+ * Generates a HTML form from with the action provided and with the serialized form provided
+ * @param  {Error} error      	Error first
+ * @param  {String} action     form action to be included
+ * @param  {Object} serialized Array with serialized form inputs
+ * @param  {Object} options    {destiny: "form destiny url"}
+ * @return {[type]}            [description]
+ */
 module.exports=function (error,action,serialized,options){
 	var destiny=options.destiny;
 	var myString='';

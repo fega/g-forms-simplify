@@ -8,6 +8,7 @@ module.exports=function(link){
 	if (link==false){
 		throw "url or Id undefined";
 	}
+	
 	if (link.includes('docs.google.com/forms')){
 		if (link.includes('/viewform')){
 			return link;

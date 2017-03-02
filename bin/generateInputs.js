@@ -1,4 +1,10 @@
 var h=require('./helpers');
+/**
+ * Generates an html text input
+ * @param  {Object} item Serialized input item
+ * @param  {Number} ind  Index to be added to the Html item ID
+ * @return {String}      Html input item
+ */
 exports.textInput = function (item,ind) {
 	var name  =item.name;
 	var typ  =item.type;
@@ -16,7 +22,12 @@ exports.textInput = function (item,ind) {
 	<input id="g-form-input-${index}" ${h.type(typ)} ${h.value(value)} ${h.name(name)} ${h.autocomplete(auto)} ${h.required(req)} ${h.placeholder(ph)} ${h.max(max)} ${h.min(min)} ${h.maxlength(maxlength)} />
 	</p>`;
 };
-
+/**
+ * Generates an html textarea
+ * @param  {Object} item Serialized input item
+ * @param  {Number} ind  Index to be added to the Html item ID
+ * @return {String}      Html textarea item
+ */
 exports.textareaInput = function (item,ind) {
 	var name  =item.name;
 	var typ  =item.type;
