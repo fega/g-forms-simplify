@@ -1,6 +1,6 @@
 {
   "name": "g-forms-simplify",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Simplify google forms markup to embed it in a web page with your own style",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "forms",
     "forms"
   ],
-  "author": "Fabian Gutierrez <fega.hg@gmail.com> (http://www.fabiangutierrez.co/)",
+  "author": "Fabian Gutierrez <fega.hg@gmail.com> (http://fabiangutierrez.co/)",
   "license": "MIT",
   "devDependencies": {
     "chai": "3.5.0",
@@ -28,10 +28,12 @@
     "colors": "1.1.2",
     "commander": "2.9.0",
     "is-number": "3.0.0",
-    "request": "2.78.0"
+    "request": "2.78.0",
+    "request-promise-native": "^1.0.3"
   },
   "repository": "https://github.com/fega/g-forms-simplify.git",
   "bin": {
+    "g-forms": "index.js",
     "g-forms-simplify": "index.js"
   }
 }
