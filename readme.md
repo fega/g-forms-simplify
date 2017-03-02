@@ -79,7 +79,7 @@ var myForm = gForms('idOrUrl', options)
  *   destiny: "destinyUrl"
  * }
  */
-
+```
 ## License
 
 MIT © [Fabian Gutierrez](http://fabiangutierrez.co)
