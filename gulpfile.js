@@ -58,6 +58,10 @@ gulp.task('watch', function () {
   gulp.watch(['lib/**/*.js', 'test/**'], ['test']);
 });
 
+gulp.task('babel-watch', function () {
+  gulp.watch(['lib/**/*.js'], ['babel']);
+});
+
 gulp.task('coveralls', ['test'], function () {
   if (!process.env.CI) {
     return;

@@ -14,11 +14,11 @@ Simplify the google forms markup to easily embed it in a webpage with your own s
 
 `$ npm install -g g-forms-simplify`
 
-## Usage
+## CLI Usage
 
-## input:
+### input:
 ```bash
-$ g-forms-simplify -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
+$ g-forms -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
 ```
 ### output:
 ```html
@@ -60,13 +60,25 @@ $ g-forms-simplify -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"
 </form>
 
 ```
-## CLI options
+### CLI options
 
-### '-f, --form (URL || ID)'
+#### '-f, --form (URL || ID)'
 the url to be simplified.
 
-### '-d --destiny (URL)'
+#### '-d --destiny (URL)'
 The page that is displayed after submit the form
+
+## as Module
+```javascript
+var gForms = require('g-forms-simplify')
+
+var myForm = gForms('idOrUrl', options) 
+/**
+ * currently options could contain:
+ * {
+ *   destiny: "destinyUrl"
+ * }
+ */
 
 ## License
 
