@@ -1,0 +1,154 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\fega0\\OneDrive\\Documentos\\GitHub\\g-forms-simplify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\fega0\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle g-forms-simplify@1.4.0~prepublish: g-forms-simplify@1.4.0
+11 verbose lifecycle g-forms-simplify@1.4.0~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle g-forms-simplify@1.4.0~prepublish: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\fega0\OneDrive\Documentos\GitHub\g-forms-simplify\node_modules\.bin;C:\Users\fega0\Downloads\cmder\bin;C:\Users\fega0\Downloads\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\fega0\Downloads\cmder\vendor\conemu-maximus5;C:\Users\fega0\Downloads\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\PHP\v7.0;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Calibre2\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Ruby23-x64\bin;C:\Users\fega0\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\fega0\AppData\Local\Programs\Python\Python35-32\;C:\Users\fega0\AppData\Local\Microsoft\WindowsApps;C:\Users\fega0\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Program Files\Heroku\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Sublime Text 3\subl.exe;C:\Program Files\Sublime Text 3;C:\Ruby23-x64\bin;C:\Users\fega0\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\fega0\AppData\Local\Programs\Python\Python35-32\;C:\Users\fega0\AppData\Local\Microsoft\WindowsApps;C:\Users\fega0\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Program Files\Heroku\bin;C:\Users\fega0\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Users\fega0\Downloads\cmder\
+13 verbose lifecycle g-forms-simplify@1.4.0~prepublish: CWD: C:\Users\fega0\OneDrive\Documentos\GitHub\g-forms-simplify
+14 silly lifecycle g-forms-simplify@1.4.0~prepublish: Args: [ '/d /s /c', 'gulp prepublish' ]
+15 silly lifecycle g-forms-simplify@1.4.0~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ 'C:\\Users\\fega0\\AppData\\Roaming\\npm-cache\\g-forms-simplify\\1.4.0\\package.tgz',
+16 verbose tar pack   'C:\\Users\\fega0\\OneDrive\\Documentos\\GitHub\\g-forms-simplify' ]
+17 verbose tarball C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package.tgz
+18 verbose folder C:\Users\fega0\OneDrive\Documentos\GitHub\g-forms-simplify
+19 verbose addLocalTarball adding from inside cache C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package.tgz
+20 verbose correctMkdir C:\Users\fega0\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+21 silly cache afterAdd g-forms-simplify@1.4.0
+22 verbose afterAdd C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package\package.json not in flight; writing
+23 verbose correctMkdir C:\Users\fega0\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 verbose afterAdd C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package\package.json written
+25 silly publish { name: 'g-forms-simplify',
+25 silly publish   version: '1.4.0',
+25 silly publish   description: 'Simplify google forms markup to embed it in a web page with your own style',
+25 silly publish   homepage: 'https://github.com/fega/g-forms-simplify#readme',
+25 silly publish   author:
+25 silly publish    { name: 'Fabian Gutierrez',
+25 silly publish      email: 'fega.hg@gmail.com',
+25 silly publish      url: 'fabiangutierrez.co' },
+25 silly publish   files: [ 'dist' ],
+25 silly publish   main: 'dist/index.js',
+25 silly publish   keywords: [ 'google', 'forms', 'forms' ],
+25 silly publish   dependencies:
+25 silly publish    { 'babel-polyfill': '^6.23.0',
+25 silly publish      cheerio: '0.22.0',
+25 silly publish      colors: '1.1.2',
+25 silly publish      commander: '2.9.0',
+25 silly publish      'is-number': '3.0.0',
+25 silly publish      request: '2.78.0',
+25 silly publish      'request-promise-native': '^1.0.3' },
+25 silly publish   devDependencies:
+25 silly publish    { 'babel-cli': '^6.23.0',
+25 silly publish      'babel-core': '^6.11.4',
+25 silly publish      'babel-eslint': '^6.1.2',
+25 silly publish      'babel-preset-es2015': '6.9.0',
+25 silly publish      'babel-preset-latest': '^6.22.0',
+25 silly publish      'babel-register': '^6.9.0',
+25 silly publish      chai: '3.5.0',
+25 silly publish      'chai-http': '3.0.0',
+25 silly publish      del: '^2.0.2',
+25 silly publish      eslint: '^3.1.1',
+25 silly publish      'eslint-config-xo-space': '^0.15.0',
+25 silly publish      'eslint-plugin-babel': '^3.3.0',
+25 silly publish      gulp: '^3.9.0',
+25 silly publish      'gulp-babel': '^6.1.2',
+25 silly publish      'gulp-coveralls': '^0.1.0',
+25 silly publish      'gulp-eslint': '^3.0.1',
+25 silly publish      'gulp-exclude-gitignore': '^1.0.0',
+25 silly publish      'gulp-istanbul': '^1.0.0',
+25 silly publish      'gulp-line-ending-corrector': '^1.0.1',
+25 silly publish      'gulp-mocha': '^3.0.1',
+25 silly publish      'gulp-nsp': '^2.1.0',
+25 silly publish      'gulp-plumber': '^1.0.0',
+25 silly publish      'gulp-replace': '^0.5.4',
+25 silly publish      isparta: '^4.0.0' },
+25 silly publish   eslintConfig: { extends: 'xo-space', env: { mocha: true } },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/fega/g-forms-simplify.git' },
+25 silly publish   scripts: { prepublish: 'gulp prepublish', test: 'gulp' },
+25 silly publish   license: 'MIT',
+25 silly publish   bin:
+25 silly publish    { 'g-forms': 'dist/command.js',
+25 silly publish      'g-forms-simplify': 'dist/command.js' },
+25 silly publish   readme: '# g-forms-simplify [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]\n> \n\nSimplify the google forms markup to easily embed it in a webpage with your own style.\n\n#### Currently supports\n* text input\n* email input\n* number input\n* textarea\n* personalized thanks page\n\n## install\n\n`$ npm install -g g-forms-simplify`\n\n## CLI Usage\n\n### input:\n```bash\n$ g-forms -f "1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw"\n```\n### output:\n```html\n<form action="https://docs.google.com/forms/d/e/1FAIpQLSfKcGSBRWFEkhkZRMqDH9aFCIgsGR1a0R3LkZFA6ssNPx5tpw/formResponse" method="POST">\n    <p>\n        <label for="g-form-input-">Tu direcci�n de correo electr�nico</label>\n        <input id="g-form-input-" type="email" name="emailAddress" autocomplete="email" required />\n    </p>\n    <p>\n        <label for="g-form-input-1">Texto</label>\n        <input id="g-form-input-1" type="text" name="entry.1542505023" autocomplete="off" />\n    </p>\n    <p>\n        <label for="g-form-input-2">Parrafo</label>\n        <textarea id="g-form-input-2" name="entry.2048127791"></textarea>\n    </p>\n    <p>\n\n        <input id="g-form-input-3" type="hidden" value="2016" name="entry.1654277772_year" />\n    </p>\n    <p>\n\n        <input id="g-form-input-4" type="hidden" value="1" name="fvv" />\n    </p>\n    <p>\n\n        <input id="g-form-input-5" type="hidden" value="[,," -8042869601822691385 "]\n" name="draftResponse" />\n    </p>\n    <p>\n\n        <input id="g-form-input-6" type="hidden" value="0" name="pageHistory" />\n    </p>\n    <p>\n\n        <input id="g-form-input-7" type="hidden" value="-8042869601822691385" name="fbzx" />\n    </p>\n    <input type="submit" name="submit" value="Send">\n</form>\n\n```\n### CLI options\n\n#### \'-f, --form (URL || ID)\'\nthe url to be simplified.\n\n#### \'-d --destiny (URL)\'\nThe page that is displayed after submit the form\n\n## as Module\n```javascript\nvar gForms = require(\'g-forms-simplify\')\n\nvar myForm = gForms(\'idOrUrl\', options) \n/**\n * currently options could contain:\n * {\n *   destiny: "destinyUrl"\n * }\n */\n```\n## License\n\nMIT © [Fabian Gutierrez](http://fabiangutierrez.co)\n\n\n\n[npm-image]: https://badge.fury.io/js/g-forms-simplify.svg\n[npm-url]: https://npmjs.org/package/g-forms-simplify\n[travis-image]: https://travis-ci.org/fega/g-forms-simplify.svg?branch=master\n[travis-url]: https://travis-ci.org/fega/g-forms-simplify\n[daviddm-image]: https://david-dm.org/fega/g-forms-simplify.svg?theme=shields.io\n[daviddm-url]: https://david-dm.org/fega/g-forms-simplify\n[coveralls-image]: https://coveralls.io/repos/fega/g-forms-simplify/badge.svg\n[coveralls-url]: https://coveralls.io/r/fega/g-forms-simplify\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '59b6729a59d5b5d208890d85075a94a5cb307565',
+25 silly publish   bugs: { url: 'https://github.com/fega/g-forms-simplify/issues' },
+25 silly publish   _id: 'g-forms-simplify@1.4.0',
+25 silly publish   _shasum: '62666f9592344d83ff2421b9b18875a86d6509a8',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name g-forms-simplify
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'g-forms-simplify',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'g-forms-simplify',
+30 silly mapToRegistry   name: 'g-forms-simplify',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/g-forms-simplify
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading C:\Users\fega0\AppData\Roaming\npm-cache\g-forms-simplify\1.4.0\package.tgz
+34 verbose request uri https://registry.npmjs.org/g-forms-simplify
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 09:26:30
+37 verbose request using bearer token for auth
+38 verbose request id 0a713cb6d9e4fbde
+39 http request PUT https://registry.npmjs.org/g-forms-simplify
+40 http 403 https://registry.npmjs.org/g-forms-simplify
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Thu, 02 Mar 2017 14:26:36 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-atl6224-ATL',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1488464795.645510,VS0,VE696',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating C:\Users\fega0\AppData\Roaming\npm-cache\registry.npmjs.org\g-forms-simplify on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.4.0." : g-forms-simplify
+44 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+44 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+44 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+45 verbose statusCode 403
+46 verbose pkgid g-forms-simplify
+47 verbose cwd C:\Users\fega0\OneDrive\Documentos\GitHub\g-forms-simplify
+48 error Windows_NT 10.0.14393
+49 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error node v6.9.2
+51 error npm  v3.10.9
+52 error code E403
+53 error "You cannot publish over the previously published version 1.4.0." : g-forms-simplify
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
