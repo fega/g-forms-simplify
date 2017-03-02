@@ -4,7 +4,7 @@ var chai = require('chai');
 var expect = require('chai').expect;
 var request =require('chai-http');
 var cheerio = require('cheerio');
-var gi = require('../bin/generateInputs.js');
+var gi = require('../lib/bin/generateInputs.js');
 var $;
 
 describe('generateInputs',function(done){

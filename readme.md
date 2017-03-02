@@ -1,7 +1,5 @@
-# Google forms Simplify
-[![Coverage Status](https://coveralls.io/repos/github/fega/g-forms-simplify/badge.svg?branch=master)](https://coveralls.io/github/fega/g-forms-simplify?branch=master)
-[![Build Status](https://travis-ci.org/fega/g-forms-simplify.svg?branch=master)](https://travis-ci.org/fega/g-forms-simplify)
-[![npm version](https://badge.fury.io/js/g-forms-simplify.svg)](https://badge.fury.io/js/g-forms-simplify)
+# g-forms-simplify [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> 
 
 Simplify the google forms markup to easily embed it in a webpage with your own style.
 
@@ -73,3 +71,14 @@ The page that is displayed after submit the form
 ## License
 
 MIT © [Fabian Gutierrez](http://fabiangutierrez.co)
+
+
+
+[npm-image]: https://badge.fury.io/js/g-forms-simplify.svg
+[npm-url]: https://npmjs.org/package/g-forms-simplify
+[travis-image]: https://travis-ci.org/fega/g-forms-simplify.svg?branch=master
+[travis-url]: https://travis-ci.org/fega/g-forms-simplify
+[daviddm-image]: https://david-dm.org/fega/g-forms-simplify.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/fega/g-forms-simplify
+[coveralls-image]: https://coveralls.io/repos/fega/g-forms-simplify/badge.svg
+[coveralls-url]: https://coveralls.io/r/fega/g-forms-simplify

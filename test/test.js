@@ -1,13 +1,13 @@
 /* eslint-disable */
 'use strict'
-var chai = require('chai');
+var chai = require('chai'); 
 var expect = require('chai').expect;
 var request =require('chai-http');
 var cheerio = require('cheerio');
-var h = require('../bin/helpers');
-var urlCheck = require('../bin/formCheck.js');
-var serializeForm = require('../bin/serializeForm.js');
-var generateFormSimple = require('../bin/generateFormSimple.js');
+var h = require('../lib/bin/helpers');
+var urlCheck = require('../lib/bin/formCheck.js');
+var serializeForm = require('../lib/bin/serializeForm.js');
+var generateFormSimple = require('../lib/bin/generateFormSimple.js');
 var $;
 
 chai.use(request);
@@ -203,6 +203,13 @@ describe('formCheck',done=>{
 			done();
 		});
 	});
+	describe('(<formUrl.without./viewform>)',done=>{
+		it('should append /viewform',done=>{
+			var url= urlCheck(baseUrl2);
+			expect(url).to.equal(baseUrl2);
+			done();
+		});
+	});
 	describe('(<formID>)',done=>{
 		it('should be a <formUrl>',done=>{
 			var url= urlCheck(baseId);
@@ -212,7 +219,7 @@ describe('formCheck',done=>{
 	});
 	describe('(undefined)',done=>{
 		it('Should throw an error',done=>{
-			expect(urlCheck.bind(undefined)).to.throw();
+			expect(urlCheck.bind(undefined)).to.throw(/undefined/);
 			done();
 		})
 	});
